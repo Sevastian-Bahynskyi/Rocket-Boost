@@ -540,18 +540,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocket
       objectReference: {fileID: 0}
-    - target: {fileID: 6866590130531191337, guid: 0362d593c40a4d04097d838d1b522621, type: 3}
-      propertyPath: m_Drag
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 6866590130531191337, guid: 0362d593c40a4d04097d838d1b522621, type: 3}
-      propertyPath: m_Constraints
-      value: 56
-      objectReference: {fileID: 0}
-    - target: {fileID: 7991985295796660990, guid: 0362d593c40a4d04097d838d1b522621, type: 3}
-      propertyPath: rotationThrust
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 8135035745587109410, guid: 0362d593c40a4d04097d838d1b522621, type: 3}
       propertyPath: m_LocalPosition.x
       value: -26
