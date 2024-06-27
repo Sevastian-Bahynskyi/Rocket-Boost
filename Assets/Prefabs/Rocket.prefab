@@ -123,6 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainThrust: 1000
   rotationThrust: 100
+  engineAudioClip: {fileID: 8300000, guid: 64de735277f9ba9429dce0753ed40d6e, type: 3}
 --- !u!54 &6866590130531191337
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -258,3 +259,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32d3a4ef31f7d28479184770f9576fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneLoadDelay: 0.7
+  successAudioClip: {fileID: 8300000, guid: 132f21f2d4c7cfc418ffe7fa116ad999, type: 3}
+  crashAudioClip: {fileID: 8300000, guid: f0cdce3fbb3a4d94a8bf2300c9afb9b9, type: 3}

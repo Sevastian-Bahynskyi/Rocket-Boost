@@ -5,18 +5,19 @@ using UnityEngine.Serialization;
 
 public class Movement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    Rigidbody rb;
-    AudioSource audioSource;
     [SerializeField] private float mainThrust = 5;
     [SerializeField] private float rotationThrust = 5;
+    [SerializeField] private AudioClip engineAudioClip;
+    
+    private Rigidbody rb;
+    private AudioSource audioSource;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         ProcessThrust();
@@ -29,7 +30,7 @@ public class Movement : MonoBehaviour
         {
             rb.AddRelativeForce(Vector3.up * (mainThrust * Time.deltaTime));
             if(!audioSource.isPlaying)
-                audioSource.Play();
+                audioSource.PlayOneShot(engineAudioClip);
 
             return;
         }
