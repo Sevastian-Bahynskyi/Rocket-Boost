@@ -28,7 +28,7 @@ public class CollisionHandler : MonoBehaviour
 
     private void HandleDebugKeys()
     {
-        if(Input.GetKeyDown(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.L))
             LoadNextLevel();
         else if (Input.GetKeyDown(KeyCode.C))
             isCollisionDisabled = !isCollisionDisabled;
@@ -40,7 +40,7 @@ public class CollisionHandler : MonoBehaviour
     {
         if (isTransitioning || isCollisionDisabled)
             return;
-        
+
         switch (other.gameObject.tag)
         {
             case "Finish":
@@ -52,6 +52,16 @@ public class CollisionHandler : MonoBehaviour
                 break;
             case "Friendly":
                 Debug.Log("This thing is friendly");
+                break;
+            case "Button":
+                Debug.Log("This thing is Button");
+
+                foreach (var script in other.gameObject.GetComponents<DissapearObstacle>())
+                {
+                    script.Dissapear();
+                }
+
+                other.gameObject.GetComponents<DissapearObstacle>();
                 break;
             default:
                 Debug.Log("Sorry, you blew up!");
@@ -83,8 +93,8 @@ public class CollisionHandler : MonoBehaviour
     void LoadNextLevel()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        
-        if(currentSceneIndex + 1 == SceneManager.sceneCountInBuildSettings)
+
+        if (currentSceneIndex + 1 == SceneManager.sceneCountInBuildSettings)
             SceneManager.LoadScene(0);
         else
             SceneManager.LoadScene(currentSceneIndex + 1);
