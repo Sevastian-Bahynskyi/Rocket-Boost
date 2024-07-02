@@ -531,7 +531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asteroidPrefab: {fileID: 7880886760450593300, guid: 0038cbe91fc564346afccda9e86a4b2f, type: 3}
-  spawnRate: 3
+  spawnRate: 5
 --- !u!1 &1829449402 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5954228896973404590, guid: 677bfb443d061df4c899f25052c5e126, type: 3}
@@ -1076,7 +1076,6 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 2029799633}
   - {fileID: 431397317}
   - {fileID: 2434003239345464402}
   - {fileID: 7723572814729182732}
@@ -1086,3 +1085,4 @@ SceneRoots:
   - {fileID: 423889033}
   - {fileID: 1251993787}
   - {fileID: 816665729582304832}
+  - {fileID: 2029799633}
