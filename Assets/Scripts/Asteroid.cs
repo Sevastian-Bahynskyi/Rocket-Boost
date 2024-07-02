@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
-    [SerializeField] private float speed = 1f;
+    public float speed = 1f;
     
     private Vector2 cameraBounds;
     private Rigidbody rb;
