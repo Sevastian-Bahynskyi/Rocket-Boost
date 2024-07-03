@@ -560,7 +560,7 @@ GameObject:
   - component: {fileID: 4998256024762849571}
   - component: {fileID: 3267539133263360072}
   - component: {fileID: 2328819827233132387}
-  - component: {fileID: 4333246786848908482}
+  - component: {fileID: 580571660170258982}
   m_Layer: 0
   m_Name: Portal
   m_TagString: Untagged
@@ -9150,8 +9150,8 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4365909456275302407}
   m_Mesh: {fileID: 0}
---- !u!64 &4333246786848908482
-MeshCollider:
+--- !u!65 &580571660170258982
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9168,10 +9168,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.0000001, z: 1}
+  m_Center: {x: 0, y: 0.00000005960465, z: 0}
 --- !u!1 &5307612108910922725
 GameObject:
   m_ObjectHideFlags: 0
